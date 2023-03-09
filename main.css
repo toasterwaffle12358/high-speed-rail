@@ -2,6 +2,7 @@
     --bgcolor: #181d22;
     --evendarker: #07090a;
     --topbar-element: #22232e;
+    --grayblue: #33363e;
 }
 
 body {
@@ -152,7 +153,7 @@ a:hover {
     color: rgba(255,255,255,1)
 }
 #navbarmenubutton {
-    background-color: #3b3846;
+    background-color: var(--bgcolor);
     box-shadow: 0 1px 6px rgb(0, 0, 0);
     display: inline-block;
     max-height: 40px;
@@ -179,18 +180,65 @@ a.topbarlink {
 }
 
 #high_speed_rail_header {
-    font-size: 10vw;
+    font-size: 7vw;
     position: relative;
     left: -100%;
-    transition: left 2s 0.5s;
+    transition: left 0.5s;
     background-color: var(--bgcolor);
+    margin: 0px;
 
 }
 #high_speed_rail_header.hsr_scrolled {
-    font-size: 10vw;
+    font-size: 7vw;
     position: relative;
     left: 0%;
+    transition: left 2s 0.5s;
 }
-.inf01 {
-    margin-left: 50vw;
+#inf01 {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#infoside {
+    width: 2vw;
+    height: 30vh;
+    background-color: var(--grayblue);
+    margin-left: 1vw;
+}
+#info1 {
+    display: flex;
+}
+.infobit {
+    font-size: 3vw;
+    margin: 1.3vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 2vw;
+    background-color: var(--bgcolor);
+    transition: padding-right 0.25s, letter-spacing 0.25s;
+    display:inline-block;
+}
+.infosubtext {
+    font-size: 2.3vw;
+}
+
+#co2reduced:hover {
+    margin: 1.3vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 2vw;
+    background-color: var(--bgcolor);
+    letter-spacing: 1px;
+    padding-right: 30px;
+}
+#traveltime:hover {
+    margin: 1.3vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 2vw;
+    background-color: var(--bgcolor);
+    letter-spacing: 1px;
+    padding-right: 30px;
+}
+#infoinfo {
+    width: 100%;
 }
