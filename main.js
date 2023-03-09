@@ -6,6 +6,7 @@ let topbar = document.getElementById("topbar");
 let navbarmenubutton = document.getElementById("navbarmenubutton");
 let navbarmenuicon = document.getElementById("navbarmenuicon");
 let topbarcontainer = document.getElementById("topbarcontainer");
+let highspeedrailheader = document.getElementById("high_speed_rail_header")
 let menubuttonisclicked = false;
 let topbaropenandscrolled = false;
 
@@ -55,6 +56,11 @@ function scrollFunction() {
             topbaropenandscrolled = false;
             
         }
+    }
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+        highspeedrailheader.classList.add("hsr_scrolled");
+    } else {
+        highspeedrailheader.classList.remove("hsr_scrolled");
     }
     
 } 

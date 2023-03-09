@@ -1,23 +1,34 @@
+:root {
+    --bgcolor: #181d22;
+    --evendarker: #07090a;
+    --topbar-element: #22232e;
+}
+
 body {
-	background-color: #3b3846;
+    
+	background-color: var(--evendarker);
     color: white;
+    margin: 0px;
+    margin-top: 75px;
+    z-index: 1;
+    font-family: oswald;
 }
 
 h1 {
-    background-color: #282532;
-    text-align: center;
-    font-size: 75px;
+    text-align: left;
+    font-size: 15vw;
     font-family: oswald;
     margin: 10px;
-    margin-top:90px;
-    border-radius: 10px;
-    box-shadow: inset 0px 1px 6px rgb(0, 0, 0);
+    margin-top:0px;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
     overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    top: 75px;
 }
 
 #topbar {
-    background-color: #282532;
+    background-color: var(--evendarker);
     font-family: oswald;
     font-weight: 300;
     margin: 10px;
@@ -44,46 +55,9 @@ h1 {
     display: inline;
     overflow: hidden;
 }
-section {
-    background-color: #282532;
-    font-family: oswald;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 1px 5px 1px 10px;
-    display: inherit;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0);
-    flex-grow: 50;
-}
 
-#section1 {
-    display:flex;
-    align-items:flex-start;
-}
-
-.s1img {
-    border-radius: 10px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0);
-    width: 150px;
-    margin-top: 5px;
-    transition: border-radius 0.5s;
-}
-.s1img:hover {
-    border-radius: 2px;
-}
-#img1container {
-    background-color: #282532;
-    border-radius: 15px;
-    padding: 10px;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0);
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    flex-grow: 0;
-    max-width: 150px;
-
-}
 .topbarelement {
-    background-color: #3b3846;
+    background-color: var(--topbar-element);
     border-radius: 10px;
     padding-left: 3px;
     padding-right: 5px;
@@ -101,49 +75,15 @@ section {
     padding-right: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.398);
 }
-.s1container {
-    background-color: #282532;
-    font-family: oswald;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 7px 7px 7px 7px;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0);
-}
-.section1header {
-    font-family: oswald;
-    font-size: 25px;
-    text-align: center;
-    background-color: #3b3846;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    box-shadow: 3px 3px 4px #17151b;
 
-}
-#linksmain {
-    background-color: #3b3846;
-    border-radius: 10px;
-    margin-top: 7px;
-    padding: 5px;
-    padding-left:10px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0);
-    line-height: 2;
-}
 a {
-    color: rgb(202, 196, 255);
+    color: rgb(196, 205, 255);
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
     transition: color 0.2s, text-shadow 0.5s;
 }
 a:hover {
     color: rgb(231, 225, 255);
-    text-shadow: 0px 0px 10px rgb(190, 161, 213);
-
-}
-#newestrenderimg {
-    width: 100%;
-    max-width: 1000px;
-    border-radius: 10px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0);
-    margin-top: 5px;
+    text-shadow: 0px 0px 10px rgb(169, 161, 213);
 
 }
 
@@ -169,12 +109,13 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 #topbarcontainer {
-    background-color: #3b3846;
+    background-color: var(--bgcolor);
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     transition: width 1s, box-shadow 0.5s, border-radius 0.25s;
+    z-index: 5;
 }
 #topbarcontainer.topbarscrolled {
     width: 85px;
@@ -228,18 +169,28 @@ a:hover {
     margin-right: 5px;
     margin-bottom:2.5px;
 }
-.headertext {
-    margin: 2px;
-    display: inline;
-}
-.toaster {
-    color: gray;
-    margin: 2px;
-    display: inline;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom:2.5px;
-}
 a.topbarlink {
     text-decoration: none;
+}
+
+.bgmainimg {
+    width: 100%;
+    position: relative;
+}
+
+#high_speed_rail_header {
+    font-size: 10vw;
+    position: relative;
+    left: -100%;
+    transition: left 2s 0.5s;
+    background-color: var(--bgcolor);
+
+}
+#high_speed_rail_header.hsr_scrolled {
+    font-size: 10vw;
+    position: relative;
+    left: 0%;
+}
+.inf01 {
+    margin-left: 50vw;
 }
