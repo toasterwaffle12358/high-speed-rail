@@ -201,7 +201,7 @@ a.topbarlink {
 }
 #infoside {
     width: 2vw;
-    height: 44.5vw;
+    height: 35vw;
     background-color: var(--grayblue);
     margin-left: 1vw;
 }
@@ -209,7 +209,7 @@ a.topbarlink {
     display: flex;
 }
 .infobit {
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 1.3vw;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
@@ -219,7 +219,7 @@ a.topbarlink {
     display:inline-block;
 }
 .infosubtext {
-    font-size: 2.3vw;
+    font-size: 1.2vw;
 }
 
 #co2reduced:hover {
@@ -303,18 +303,13 @@ a.topbarlink {
 #info2 {
     margin-top: 10%;
 }
-#info2header {
-    font-size: 4.5vw;
-    background-color: var(--color3);
-    padding-left: 100px;
-}
 #info2content {
     display: flex;
 }
 #info2info {
     padding-left: 5%;
     background-color: var(--color2);
-    font-size: 3vw;
+    font-size: 2.5vw;
     width: 50%;
     padding-bottom: 10%;
     padding-right: 2%;
@@ -343,11 +338,27 @@ a.topbarlink {
     padding-left: 0px;
     letter-spacing: -1.4vw;
     color: var(--color3);
+    transition: all 1s;
 }
 #info3header.infoheadershown {
     font-size: 4.5vw;
     background-color: var(--color3);
     padding-left: 100px;
+    color: white;
+    letter-spacing: 0px;
+}
+#info2header {
+    font-size: 4.5vw;
+    background-color: var(--color3);
+    padding-left: 0px;
+    letter-spacing: -1.4vw;
+    color: var(--color3);
     transition: all 1s;
-    height: 100px;
+}
+#info2header.infoheadershown {
+    font-size: 4.5vw;
+    background-color: var(--color3);
+    padding-left: 100px;
+    color: white;
+    letter-spacing: 0px;
 }

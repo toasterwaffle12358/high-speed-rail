@@ -29,6 +29,16 @@ function clickHandler(){
     }
 }
 
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
 navbarmenubutton.addEventListener('click', clickHandler);
 
 
@@ -63,8 +73,15 @@ function scrollFunction() {
     } else {
         highspeedrailheader.classList.remove("hsr_scrolled");
     }
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
-        console.log("over")
+    if (isInViewport(document.getElementById("info3header")) == true) {
+        document.getElementById("info3header").classList.add("infoheadershown")
+    } else {
+        document.getElementById("info3header").classList.remove("infoheadershown")
+    }
+    if (isInViewport(document.getElementById("info2header")) == true) {
+        document.getElementById("info2header").classList.add("infoheadershown")
+    } else {
+        document.getElementById("info2header").classList.remove("infoheadershown")
     }
 }
 let is_showco2reducedimg_open = false;
