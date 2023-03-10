@@ -31,6 +31,7 @@ function clickHandler(){
 
 navbarmenubutton.addEventListener('click', clickHandler);
 
+
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         for (let elem of topbarelements) {
@@ -63,5 +64,20 @@ function scrollFunction() {
         highspeedrailheader.classList.remove("hsr_scrolled");
     }
     
-} 
+}
+let is_showco2reducedimg_open = false;
+let infoimg1 = document.getElementById("infoimg1")
 
+
+function showco2reducedimg() {
+    if (is_showco2reducedimg_open == false) {
+        infoimg1.style.width = "35vw"
+        infoimg1.style.border = "var(--bgcolor) 1vw solid"
+        is_showco2reducedimg_open = true
+    } else {
+        infoimg1.style.width = "0vw"
+        infoimg1.style.border = "none"
+        is_showco2reducedimg_open = false
+    }
+    console.log(window.innerWidth)
+}
