@@ -63,7 +63,9 @@ function scrollFunction() {
     } else {
         highspeedrailheader.classList.remove("hsr_scrolled");
     }
-    
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+        console.log("over")
+    }
 }
 let is_showco2reducedimg_open = false;
 let is_showtraveltimes_open = false;

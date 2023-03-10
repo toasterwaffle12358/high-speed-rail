@@ -334,3 +334,20 @@ a.topbarlink {
     padding-top: 15px;
     font-size: 3vw;
 }
+#info3 {
+    background-color: var(--bgcolor);
+}
+#info3header {
+    font-size: 4.5vw;
+    background-color: var(--color3);
+    padding-left: 0px;
+    letter-spacing: -1.4vw;
+    color: var(--color3);
+}
+#info3header.infoheadershown {
+    font-size: 4.5vw;
+    background-color: var(--color3);
+    padding-left: 100px;
+    transition: all 1s;
+    height: 100px;
+}
