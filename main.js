@@ -66,18 +66,49 @@ function scrollFunction() {
     
 }
 let is_showco2reducedimg_open = false;
+let is_showtraveltimes_open = false;
+let is_showcarcrash_open = false;
 let infoimg1 = document.getElementById("infoimg1")
+let infoimg2 = document.getElementById("infoimg2")
+let infoimg3 = document.getElementById("infoimg3")
 
 
 function showco2reducedimg() {
     if (is_showco2reducedimg_open == false) {
-        infoimg1.style.width = "35vw"
-        infoimg1.style.border = "var(--bgcolor) 1vw solid"
+        infoimg1.classList.add("infoimgopen")
+        infoimg2.classList.remove("infoimgopen")
+        infoimg3.classList.remove("infoimgopen")
         is_showco2reducedimg_open = true
+        is_showtraveltimes_open = false
+        is_showcarcrash_open = false
     } else {
-        infoimg1.style.width = "0vw"
-        infoimg1.style.border = "none"
+        infoimg1.classList.remove("infoimgopen")
         is_showco2reducedimg_open = false
     }
-    console.log(window.innerWidth)
+}
+function showtraveltimesimg() {
+    if (is_showtraveltimes_open == false) {
+        infoimg2.classList.add("infoimgopen")
+        infoimg1.classList.remove("infoimgopen")
+        infoimg3.classList.remove("infoimgopen")
+        is_showtraveltimes_open = true
+        is_showco2reducedimg_open = false
+        is_showcarcrash_open = false
+    } else {
+        infoimg2.classList.remove("infoimgopen")
+        is_showtraveltimes_open = false
+    }
+   
+}
+function showcarcrashimg() {
+    if (is_showcarcrash_open == false) {
+        infoimg3.classList.add("infoimgopen")
+        infoimg1.classList.remove("infoimgopen")
+        infoimg2.classList.remove("infoimgopen")
+        is_showco2reducedimg_open = false
+        is_showtraveltimes_open = false
+        is_showcarcrash_open = true
+    } else {
+        infoimg3.classList.remove("infoimgopen")
+    }
 }
