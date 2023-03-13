@@ -142,5 +142,6 @@ function showcarcrashimg() {
         is_showcarcrash_open = true
     } else {
         infoimg3.classList.remove("infoimgopen")
+        is_showcarcrash_open = false
     }
 }
