@@ -72,15 +72,29 @@ function scrollFunction() {
     } else {
         highspeedrailheader.classList.remove("hsr_scrolled");
     }
+
     if (isInViewport(document.getElementById("info3header")) == true) {
         document.getElementById("info3header").classList.add("infoheadershown")
     } else {
         document.getElementById("info3header").classList.remove("infoheadershown")
     }
+
     if (isInViewport(document.getElementById("info2header")) == true) {
         document.getElementById("info2header").classList.add("infoheadershown")
     } else {
         document.getElementById("info2header").classList.remove("infoheadershown")
+    } 
+
+    if (isInViewport(document.getElementById("info4header")) == true) {
+        document.getElementById("info4header").classList.add("infoheadershown")
+    } else {
+        document.getElementById("info4header").classList.remove("infoheadershown")
+    }
+
+    if (isInViewport(document.getElementById("info5header")) == true) {
+        document.getElementById("info5header").classList.add("infoheadershown")
+    } else {
+        document.getElementById("info5header").classList.remove("infoheadershown")
     }
 }
 let is_showco2reducedimg_open = false;
