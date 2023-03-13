@@ -264,13 +264,13 @@ a.topbarlink {
 
 #infoimgdiv {
     align-self: center;
+
 }
 #infoimg2 {
-    margin: 2vw;
-    margin-left: 0vw;
     width: 0vw;
     border: none;
     transition: width 0.5s, border 0.5s;
+    margin-right: 2vw;
 }
 #infoimg3 {
     margin: 2vw;
@@ -280,8 +280,8 @@ a.topbarlink {
     transition: width 0.5s, border 0.5s;
 }
 #infoimg2.infoimgopen {
-    margin: 2vw;
     margin-left: 0vw;
+    margin-right: 2vw;
     width: 35vw;
     border: var(--bgcolor) 1vw solid;
     transition: width 0.5s, border 0.5s;
@@ -314,13 +314,15 @@ a.topbarlink {
     padding-bottom: 10%;
     padding-right: 2%;
 }
-#info2img {
+.info2img {
     width: 50%;
     background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#info2imgimg {
-    width: 100%;
-    
+.info2imgimg {
+    width: 90%;
 }
 #sourcescontent {
     background-color: var(--sourcesbackground);
@@ -361,4 +363,7 @@ a.topbarlink {
     padding-left: 100px;
     color: white;
     letter-spacing: 0px;
+}
+.imgslideshowimg {
+    max-width: 90%;
 }
