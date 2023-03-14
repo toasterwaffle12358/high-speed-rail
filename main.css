@@ -6,6 +6,7 @@
     --color2: #2a303f;
     --color3: #4b5161;
     --sourcesbackground: #0e161d;
+    --color4: #131e29;
 }
 
 body {
@@ -330,7 +331,7 @@ a.topbarlink {
     padding-bottom: 100px;
     padding-left: 3%;
     padding-top: 15px;
-    font-size: 3vw;
+    font-size: 1.5vw;
 }
 .info3 {
     background-color: var(--bgcolor);
@@ -410,4 +411,61 @@ a.topbarlink {
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Times New Roman', Times, serif;
+}
+#statscontent {
+    margin-top: 7vw;
+    padding: 1%;
+    background-color: var(--sourcesbackground);
+    display: flex;
+}
+
+.statsinner {
+    width: 20%;
+    margin: 5%;
+    background-color: var(--color4);
+    padding: 2%;
+    font-size: 1vw;
+}
+.statsimg {
+    width: 100%;
+}
+#extracreditheader {
+    font-size: 8vw;
+    text-align: center;
+    width: 100%;
+    margin: none;
+    padding: none;
+}
+#extracreditmain {
+    padding: 3%;
+    font-size: 3vw;
+    margin: none;
+}
+#extracreditheadertext {
+    margin: none;
+    font-size: 8vw;
+    padding: none;
+}
+#extracreditheader {
+    position: absolute;
+    left: 0px;
+    margin-left: 0px;
+}
+#funfactsheader {
+    font-size: 2vw;
+    text-align: center;
+}
+#conclusionheader {
+    margin-top: 100px;
+    background-color: var(--bgcolor);
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#conclusioncontent {
+    background-color: var(--bgcolor);
+    font-size: 3vw;
+    padding: 2%;
 }
